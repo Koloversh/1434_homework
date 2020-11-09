@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        int i = 1;
+        while (i < 11){
+            System.out.print(i + " ");
+            int j = 2;
+            while (j < 11){
+                int scale = i*j;
+                if (scale < 11){
+                    System.out.print(scale + " ");
+                } else {
+                    System.out.print(scale + " ");
+                }
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+
+    }
+}
