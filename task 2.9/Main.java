@@ -3,16 +3,19 @@
 public class Main {
     public static void main(String[] args) {
 
-        int [] array = {6, 7, 19, 20, 5,  3, 5};
+        int [] array = {6, 7, 5, 20, 7,  3, 8};
+        String alarm = "Нет!";
 
         for (int i = 0; i < array.length ; i++) {
-            if (array[i] == array.length){
-                System.out.println("Нет.");
-            } else {
-                System.out.println("Да!");
+            if (array[i] == 5){
+                alarm = "Da!";
                 break;
             }
         }
+        System.out.println(alarm);
 
+        
+        
+        
     }
 }
