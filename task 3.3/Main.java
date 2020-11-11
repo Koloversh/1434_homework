@@ -15,7 +15,6 @@ public class Main {
     }
 
     public static boolean returnAnswer(int a, int b) {
-
         if (a != b) {
             return false;
         } else {
