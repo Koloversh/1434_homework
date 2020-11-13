@@ -14,17 +14,19 @@
 public class Main {
     public static void main(String[] args) {
 
-        String a = "Мама";
-        String b = "Мыла";
-        String c = "Раму";
+        String [] array = {"Мама ","Мыла ","Раму ",};
 
-        String line = a + b + c;
-        System.out.println(line);
-        System.out.println(b + c + a);
-        System.out.println(c + b + a);
-        System.out.println(a + c + b);
-        System.out.println(c + a + b);
-        System.out.println(b + a + c);
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                for (int k = 0; k < array.length; k++) {
+
+                    if (array[i] != array[j] &&  array[k] != array[j] && array[k] != array[i]) {
+                        System.out.println(array[i] + array[j] + array[k]);
+                    }
+                    
+                }
+            }
+        }
         
     }
 }
