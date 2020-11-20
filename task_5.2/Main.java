@@ -42,11 +42,17 @@ public class Main {
 
 //        System.out.println( citiesList + " " + familyList);
         // Где и кто живёт
-        int houseNumber = Integer.parseInt(scanner.nextLine());
+        String search = scanner.nextLine();
         for (int i = 0; i < citiesList.size() ; i++) {
-            if ( houseNumber == i) {
+            if (search.equals(citiesList.get(i))) {
                 System.out.println(familyList.get(i));
             }
+        }
+//        int houseNumber = Integer.parseInt(scanner.nextLine());
+//        for (int i = 0; i < citiesList.size() ; i++) {
+//            if ( houseNumber == i) {
+//                System.out.println(familyList.get(i));
+//            }
         }
         
     }
